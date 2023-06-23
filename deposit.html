@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deposit Money</title>
+    <style>
+        body{
+        background-color: #dfdddd;
+        color: #081b54;
+        }
+        h1{
+        color: #081b54;
+        font-size: 40px;
+        font-family: Elisar Infant;
+        }
+        .button{
+        color: #081b54;
+        background-color: #dfdddd;
+        font-size: 20px;
+        font-family: Elisar Infant;
+        border:#dfdddd;
+        cursor: pointer;
+        }
+        .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+        .depositHeading{
+        font-size: 30px;
+        }
+        .depositDetails{
+        background-color: red
+        }
+    </style>
+</head>
+<body>
+
+<h1>Bank of America</h1>
+<div class="container">
+
+    <form action ="/renderCreateAccForm" >
+
+        <input class="button" type = "submit" value= "Create Account"><br>
+    </form>
+
+<form action = "/renderDeposit">
+
+    <input class="button" type = "submit" value= "Deposit Money"><br>
+</form>
+
+<form action="/renderWithdraw">
+
+    <input class="button" type = "submit" value= "Withdraw Money"><br>
+</form>
+
+<form action="/renderInterest">
+
+    <input class="button" type = "submit" value= "Calculate Interest"><br>
+</form>
+
+<form action="/renderTransactions">
+
+    <input class="button" type = "submit" value= "View Transaction"><br>
+</form>
+</div>
+
+
+
+<div class="depositDetails">
+<h1 class="depositHeading">Deposit Money Into Your Account!</h1>
+
+<form action="/deposit" method="post">
+
+<label for="accnum">Enter your Account Number: </label><br>
+<input type = "text" id="accnum" name="accnum"><br>
+
+<label for="amt">Enter the amount you would like to deposit: </label><br>
+<input type = "text" id="amt" name="amt"><br>
+
+<input type = "submit" value="Submit">
+
+</form>
+</div>
+
+
+</body>
+</html>

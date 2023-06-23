@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!this will have all the different options you can do, like create an acc, deposit, withdraw, interest, and view
+transaction>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+        body{
+        background-color: #dfdddd;
+        color: #081b54;
+        }
+        h1{
+        color: #081b54;
+        font-size: 40px;
+        font-family: Elisar Infant;
+        }
+        .button{
+        color: #081b54;
+        background-color: #dfdddd;
+        font-size: 20px;
+        font-family: Elisar Infant;
+        border:#dfdddd;
+        cursor: pointer;
+        }
+        .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<h1>Bank of America</h1>
+<div class="container">
+
+    <form action ="/renderCreateAccForm" >
+
+        <input class="button" type = "submit" value= "Create Account"><br>
+    </form>
+
+<form action = "/renderDeposit">
+
+    <input class="button" type = "submit" value= "Deposit Money"><br>
+</form>
+
+<form action="/renderWithdraw">
+
+    <input class="button" type = "submit" value= "Withdraw Money"><br>
+</form>
+
+<form action="/renderInterest">
+
+    <input class="button" type = "submit" value= "Calculate Interest"><br>
+</form>
+
+<form action="/renderTransactions">
+
+    <input class="button" type = "submit" value= "View Transaction"><br>
+</form>
+</div>
+<img src="https://images.app.goo.gl/zj73sY3fKvR31vGE6.jpg">
+</body>
+</html>
+

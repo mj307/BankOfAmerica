@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!this will have the inputs for create an account>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+    <style>
+        body{
+        background-color: #dfdddd;
+        color: #081b54;
+        }
+        h1{
+        color: #081b54;
+        font-size: 40px;
+        font-family: Elisar Infant;
+        }
+        .button{
+        color: #081b54;
+        background-color: #dfdddd;
+        font-size: 20px;
+        font-family: Elisar Infant;
+        border:#dfdddd;
+        cursor: pointer;
+        }
+        .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+        .createHeading{
+        font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>Bank of America</h1>
+<div class="container">
+
+    <form action ="/renderCreateAccForm" >
+
+        <input class="button" type = "submit" value= "Create Account"><br>
+    </form>
+
+<form action = "/renderDeposit">
+
+    <input class="button" type = "submit" value= "Deposit Money"><br>
+</form>
+
+<form action="/renderWithdraw">
+
+    <input class="button" type = "submit" value= "Withdraw Money"><br>
+</form>
+
+<form action="/renderInterest">
+
+    <input class="button" type = "submit" value= "Calculate Interest"><br>
+</form>
+
+<form action="/renderTransactions">
+
+    <input class="button" type = "submit" value= "View Transaction"><br>
+</form>
+</div>
+
+<h1 class="createHeading">Create Your Bank of America Account!</h1>
+
+<form action="/create" method="post">
+<label for="name">Enter your name</label>
+<input type = "text" id="name" name="name"><br>
+
+<label for="acctype">Enter your Account Type</label>
+<input type = "text" id="acctype" name="acctype"><br>
+
+<label for="balance">Enter your starting balance</label>
+<input type = "text" id="balance" name="balance"><br>
+
+<input type = "submit" value="Submit">
+</form>
+
+</body>
+</html>
